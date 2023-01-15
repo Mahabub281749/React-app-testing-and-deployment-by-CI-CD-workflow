@@ -158,3 +158,17 @@ on:
         if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         run: npx surge --project ./build --domain flaky-taste.surge.sh
 ```
+
+## Upload Code Coverage Report to Codecov
+
+- [Codecov](https://about.codecov.io/) 
+
+## Workflow 
+
+```
+- name: Upload Coverage Reports
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        run: npx codecov
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+```
