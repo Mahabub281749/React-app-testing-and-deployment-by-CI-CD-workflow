@@ -147,3 +147,14 @@ on:
           zip -r build.zip ./build
           zip -r coverage.zip ./build
 ```
+
+### Deploy to Production
+
+```
+- name: Deploy to staging
+        if: github.event_name == 'push' && github.ref == 'refs/heads/Develop'
+        run: npx surge --project ./build --domain harsh-shop.surge.sh
+- name: Deploy to Production
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        run: npx surge --project ./build --domain flaky-taste.surge.sh
+```
