@@ -31,7 +31,6 @@
 `on:`
 `pull_request:`
 `branches: [Develop]`
-
 `jobs:`
 `build:`
 `runs-on: ubuntu-latest`
