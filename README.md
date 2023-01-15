@@ -1,3 +1,5 @@
+![](https://github.com/Mahabub281749/React-app-testing-and-deployment-by-CI-CD-workflow/workflows/CI/badge.svg?branch=Develop&event=push)
+
 # React-app-testing-and-deployment-by-CI-CD-workflow
 
 <img src="Workflow.png">
