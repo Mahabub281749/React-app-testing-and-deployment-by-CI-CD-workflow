@@ -1,10 +1,10 @@
 # React-app-testing-and-deployment-by-CI-CD-workflow
 
-<img src="Workflow.JPG">
+<img src="Workflow.png">
 
 ## Workflow
 
-<img src="Workflow2.JPG">
+<img src="Workflow2.png">
 
 - Install Dependencies
 - Check code formatting
@@ -14,7 +14,7 @@
 
 ## Develop
 
-<img src="Develop.JPG">
+<img src="Develop.png">
 
 - Install Dependencies
 - Check code formatting
@@ -27,7 +27,7 @@
 
 ## Master
 
-<img src="Master.JPG">
+<img src="Master.png">
 
 - Install Dependencies
 - Check code formatting
