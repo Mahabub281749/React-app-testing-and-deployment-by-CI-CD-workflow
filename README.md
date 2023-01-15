@@ -124,6 +124,12 @@ plugins: [
 ### Semantic release in workflow
 
 ```
+on:
+  pull_request:
+    branches: [Develop, master]
+  push:
+    branches: [Develop, master]
+
 - name: Create a Release
         if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         run: npx semantic-release
