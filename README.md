@@ -25,17 +25,3 @@
 - Deploy to Staging server
 - Cache Dependencies
 
-## Master
-
-<img src="Master.png">
-
-- Install Dependencies
-- Check code formatting
-- Run Automated Test
-- Upload Code Coverage as an Artifact
-- Build Projects
-- Upload Build as an Artifact
-- Create a Release
-- Deploy to Production server
-- Upload Coverage to Codecov
-- Cache Dependencies
