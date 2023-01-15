@@ -45,3 +45,29 @@
 `- run: npm test -- --coverage`
 `env:`
 `CI: true"`
+
+### Creating Develop Merge Request Workflow
+
+```
+push:
+    branches: [Develop]
+
+- name: Build Project
+    if: github.event_name == 'push'
+    run: npm run build
+- name: Deploy to staging
+    if: github.event_name == 'push' && github.ref == 'refs/heads/Develop'
+    run: npx surge --project ./build --domain harsh-shop.surge.sh
+    env:
+        SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }}
+        SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
+
+```
+
+### SURGE LOGIN
+
+`surge whoami`
+
+### SURGE TOEKN
+
+`surge token`
