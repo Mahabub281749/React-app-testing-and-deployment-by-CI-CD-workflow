@@ -84,3 +84,22 @@ push:
             ${{ runner.os }}-node-
 
 ```
+
+### Uploading Artifacts
+
+```
+- name: Upload Test Coverage
+        uses: actions/upload-artifact@v3
+        with:
+          name: code-coverage
+          path: coverage
+
+- name: Upload Build Folder
+        if: github.event_name == 'push'
+        uses: actions/upload-artifact@v3
+        with:
+          name: build
+          path: build
+- uses: actions/download-artifact@v3
+
+```
