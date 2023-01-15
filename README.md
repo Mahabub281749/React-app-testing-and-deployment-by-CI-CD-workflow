@@ -72,3 +72,15 @@ push:
 
 `surge token`
 
+### Cache
+
+```
+- name: Cache node-modules
+        uses: actions/cache@v1
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+```
