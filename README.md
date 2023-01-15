@@ -1,13 +1,17 @@
-## Deploy application using Surge
+## Using Prettier for Code Formatting
 
 ###
-- [Surge](https://surge.sh/)
 
-### Generate domain to host the Application
-`surge`
+- [Prettier](https://prettier.io/)
 
-## IMPORTANT
+### Install Prettier
 
-```
-In the project name, "build" folder needs to be specified
-```
+`npm install --save-dev --save-exact prettier`
+
+### To check formatting
+
+`npm run format:check`
+
+### To correct formatting
+
+`npm run format`
