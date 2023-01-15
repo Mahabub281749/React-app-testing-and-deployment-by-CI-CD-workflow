@@ -120,3 +120,14 @@ plugins: [
 ]
 }
 ```
+
+### Semantic release in workflow
+
+```
+- name: Create a Release
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        run: npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/download-artifact@v3
+```
